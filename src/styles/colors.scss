@@ -1,0 +1,53 @@
+@import "./utils.scss";
+
+// main and retail LOB
+$primary: #112749;
+$secondary: #00529b;
+$tertiary: #90c4e7;
+$quaternary: #d3eaf5;
+
+// publisher LOB
+$publisher-primary: #436b30;
+$publisher-secondary: #6db43b;
+$publisher-tertiary: #bbdb7e;
+$publisher-quaternary: #e5efc6;
+
+// library LOB
+$library-primary: #672658;
+$library-secondary: #8a2f83;
+$library-tertiary: #b591bd;
+$library-quaternary: #e1daec;
+
+// education LOB
+$education-primary: #a43c21;
+$education-secondary: #ef801e;
+$education-tertiary: #f5bf51;
+$education-quaternary: #ffefc2;
+
+// tertiary UI
+$accent: #f2cd14;
+
+$blue-gradient: gradient($primary, $secondary);
+$blue-purple-gradient: gradient($primary, $library-secondary);
+$blue-green-gradient: gradient($primary, $publisher-primary);
+$purple-cta-gradient: gradient($library-secondary);
+$blue-cta-gradient: gradient($primary);
+
+// Human-friendly
+$rust: $education-primary;
+$orange: $education-secondary;
+$sun: $accent;
+$gold: $education-tertiary;
+$incandescent: $education-quaternary;
+$pine: $publisher-primary;
+$lime: $publisher-secondary;
+$ginseng: $publisher-tertiary;
+$beige: $publisher-quaternary;
+$yale: $secondary;
+$navy: $primary;
+$sky: $tertiary;
+$glacier: $quaternary;
+$wine: $library-primary;
+$plum: $library-secondary;
+$lavender: $library-tertiary;
+$lilac: $library-quaternary;

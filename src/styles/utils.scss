@@ -1,0 +1,22 @@
+@function opacify($color, $opacity) {
+  $safe-opacity: max(0%, min(100%, $opacity * 1%));
+  @return rgba($color, $safe-opacity);
+}
+
+// call with color1 alone for CTA gradient
+@mixin gradient($color1, $color2: null, $opacity: 100) {
+  background: $color1;
+  @if $color2 == null {
+    background: linear-gradient(
+      15deg,
+      opacify($color1, 30),
+      opacify($color1, 15)
+    );
+  } @else {
+    background: linear-gradient(
+      15deg,
+      opacify($color1, $opacity),
+      opacify($color2, $opacity)
+    );
+  }
+}
